@@ -20,11 +20,11 @@ Your assignment page on Canvas should contain instructions for submitting this p
   - Add support for environment variables using an `.env` file and the dotenv library, providing fallbacks in the code
   - Flesh out the API:
 
-    | Method | URL           | Description                                                                                         |
-    | ------ | ------------- | ----------------------------------------------------------------------------------------------      |
-    | GET    | /api/users    | Returns an array users.                                                                             |
+    | Method | URL | Description |
+    | -------------------------- |
+    | GET    | /api/users    | Returns an array users. |
     | POST   | /api/register | Creates a user from { username, password } in the `request body`, responds with newly created user. |
-    | POST   | /api/login    | Checks { username, password } in the `request body`, responds with a welcome message.               |
+    | POST   | /api/login    | Checks { username, password } in the `request body`, responds with a welcome message. |
 
 - [ ] Deploy your app to [Heroku](https://heroku.com). The link to the deployed API is your submission deliverable
 
