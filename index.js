@@ -35,7 +35,11 @@ app.post('/register', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-    res.status(200).json({ message: 'You have logged in' });
+    if (!req.body.name || !req.body.password) {
+        res.status(404).json({ message: "Please enter a valid name and password" });
+    } else {
+        res.status(200).json({ message: `You have logged in as ${req.body.name} `});
+    }
 });
 
 
