@@ -5,6 +5,10 @@ app.use(express.json());
 
 const port = process.env.PORT;
 
+app.get('/', (req, res) => {
+    res.send('<h1>WELCOME, FOOLS</h1>');
+});
+
 app.get('/users', (req, res) => {
     res.status(200).json({ message: 'Here is where you would get a list of users' });
 });
